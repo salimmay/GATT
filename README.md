@@ -14,7 +14,6 @@ This project moves away from traditional grid-based portfolios, offering visitor
 *   **✨ Custom Interactive Cursor:** A sleek, physics-based custom cursor that inverts colors automatically based on the background.
 *   **⚡ Live Menu Bar:** A frosted-glass top menu bar featuring a real-time, ticking clock.
 *   **🪟 Functional Dock:** A bottom app launcher with magnification hover effects, linking to socials and a dedicated "About Me / CV" notes app.
-
 ---
 
 ## 🛠️ Tech Stack
@@ -32,12 +31,11 @@ This project is built purely on the Frontend for maximum speed, security, and ze
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-
+   git clone https://github.com/salimmay/GATT.git
     Navigate to the directory:
     code Bash
 
-    cd YOUR_REPO_NAME
+    cd GATT
 
     Install dependencies:
     code Bash
@@ -81,9 +79,8 @@ Designed & Developed by Aziz Gattoussi.
 code Code
 
 ### Next Steps:
-1. Replace `YOUR_USERNAME` and `YOUR_REPO_NAME` in the "How to Run Locally" section with your actual GitHub info.
-2. Save the file.
-3. Run these quick commands in your terminal to push the shiny new README up to GitHub:
+1. Save the file.
+2. Run these quick commands in your terminal to push the shiny new README up to GitHub:
    ```bash
    git add README.md
    git commit -m "📝 Added premium README documentation"
