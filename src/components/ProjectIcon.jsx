@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
@@ -13,8 +12,10 @@ const Wrapper = styled.div`
   }
 `;
 
-const IconContainer = styled(motion.div)`
+const IconContainer = styled(motion.button)`
+  appearance: none; border: 0; background: transparent; color: inherit;
   display: flex; flex-direction: column; align-items: center; gap: 8px; cursor: pointer;
+  padding: 0;
 `;
 
 const Thumbnail = styled.div`
@@ -39,7 +40,15 @@ const Label = styled.span`
 const ProjectIcon = ({ item, onClick }) => {
   return (
     <Wrapper $top={item.position.top} $left={item.position.left}>
-      <IconContainer 
+      <IconContainer
+        type="button"
+        aria-label={`Open ${item.title} project`}
+        onKeyDown={event => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            onClick();
+          }
+        }}
         // --- THE MAGIC DRAG PROPERTIES ---
         drag 
         dragMomentum={false} // Stops exactly where you drop it

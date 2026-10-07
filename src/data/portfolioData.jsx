@@ -1,8 +1,11 @@
-import React from 'react';
 import { Mail, FileText } from 'lucide-react'; 
 import { FaFigma, FaInstagram } from 'react-icons/fa'; 
 
-const placeholder = "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=500&auto=format&fit=crop";
+const mockImages = {
+  purple: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=900&auto=format&fit=crop",
+  orange: "https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=900&auto=format&fit=crop",
+  blue: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=900&auto=format&fit=crop",
+};
 
 export const desktopItems = [
   {
@@ -10,7 +13,7 @@ export const desktopItems = [
     title: 'Stage Visuals',
     subtitle: 'Various Artists',
     category: 'Experience',
-    thumbnail: placeholder,
+    thumbnail: mockImages.purple,
     position: { top: '25%', left: '35%' }, 
     sections: [
       {
@@ -23,7 +26,7 @@ export const desktopItems = [
         id: '2',
         type: 'image',
         layout: 'full',
-        content: placeholder 
+content: mockImages.blue
       },
       {
         id: '3',
@@ -35,7 +38,7 @@ export const desktopItems = [
         id: '4',
         type: 'image',
         layout: 'half-right',
-        content: placeholder
+        content: mockImages.orange
       }
     ]
   },
@@ -44,7 +47,7 @@ export const desktopItems = [
     title: 'Brand Identity',
     subtitle: 'Nike',
     category: 'Commercial',
-    thumbnail: placeholder,
+    thumbnail: mockImages.purple,
     position: { top: '60%', left: '65%' },
     sections: [
       { id: '1', type: 'text', layout: 'full', content: "Complete brand overhaul including typography, colors, and motion guidelines." }

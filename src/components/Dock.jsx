@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
 import { dockItems } from '../data/portfolioData';
@@ -20,7 +20,8 @@ const DockWrapper = styled(motion.div)`
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 `;
 
-const AppIcon = styled(motion.div)`
+const AppIcon = styled(motion.button)`
+  appearance: none; color: inherit;
   position: relative; 
   width: 54px; 
   height: 54px; 
@@ -66,8 +67,10 @@ const Dock = ({ onOpenCv }) => {
       transition={{ type: 'spring', damping: 25, stiffness: 200, delay: 0.2 }}
     >
       {dockItems.map(item => (
-        <AppIcon 
-          key={item.id} 
+        <AppIcon
+          type="button"
+          key={item.id}
+          aria-label={item.label} 
           onClick={() => handleClick(item)}
           onMouseEnter={() => setHovered(item.id)} 
           onMouseLeave={() => setHovered(null)}
