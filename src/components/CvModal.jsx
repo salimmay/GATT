@@ -10,7 +10,7 @@ const CvModal = ({ onClose }) => {
     "EP, single covers", "Stage visuals", "Motion Design",
     "Logotypes", "Photography", "Fonts", "Posters", "Web",
     "Clothing design", "Social media design", 
-    "Indirect collaboration with Spotify",
+    "Independent concept work",
     "Event materials and visual design", "Social media content"
   ];
 
@@ -23,7 +23,7 @@ const CvModal = ({ onClose }) => {
             <span className="red" onClick={onClose}/>
             <span className="yellow"/><span className="green"/>
           </div>
-          <div className="title">Information about: Miłosz Chudy, Gatt@gmail.com</div>
+          <div className="title">Information about: Alex Morgan, hello@example.com</div>
         </TitleBar>
 
         <Body>
@@ -44,7 +44,7 @@ const CvModal = ({ onClose }) => {
           {/* RIGHT CONTENT */}
           <Content>
             <p className="intro">
-              Art Director, Graphic Designer, Photographer, and even Stylist sometimes, but honestly, I do way more than that... To put it simply, I bring ideas to life through visuals and manage everything that makes a project come together in the end.
+              Alex is a fictional multidisciplinary designer exploring art direction, graphic design, photography, and motion. This profile is a presentation demo built entirely with mocked projects and sample content.
             </p>
             
             <h3 className="section-title">I can do...</h3>
